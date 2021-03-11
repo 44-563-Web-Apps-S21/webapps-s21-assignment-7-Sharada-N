@@ -46,9 +46,9 @@
 		let element = document.createElement("div") 
 		element.innerHTML = document.getElementById("1").value
         element.setAttribute("class","listy")    
-        if(listyItems.length > 9){
+        if(listyItems.length > 8){
         for(j of listyItems){
-            if(i.innerHTML ==document.getElementById("1").value ){
+            if(j.innerHTML ==document.getElementById("1").value ){
             j.remove()
             console.log("We are getting rid of duplicates")
             flag = 1
@@ -56,11 +56,10 @@
         }
             }
             if(flag == 0){
-                index = Math.floor
+                index = Math.floor(Math.random()*8)
             listyItems[index].remove()
         }  
         }
-		/* add it to the container */
 		document.getElementById('target').appendChild(element)
         
 		
